@@ -1,6 +1,3 @@
-Here’s a cleaned-up and properly formatted Markdown version of your README with duplicate sections removed, consistent code blocks, and clear spacing for logs:
-
-```markdown
 # Log Files Merger Demo
 
 **A simple C program to merge and sort two log files by timestamp.**
@@ -15,9 +12,7 @@ This project demonstrates reading, parsing, and merging multiple log files in C.
 * Each log entry is expected in the format:
 
 ```
-
 <timestamp>  <message>
-
 ```
 
 > **Note:** There are **two spaces** between the timestamp and the message.
@@ -33,32 +28,30 @@ This project demonstrates reading, parsing, and merging multiple log files in C.
 **Input:**
 
 `server1.log`
-```
 
+```
 2025-10-22T10:00:00  Server1 started
 2025-10-22T10:05:00  Cache cleared
-
 ```
 
 `server2.log`
-```
 
+```
 2025-10-22T10:02:00  Server2 started
 2025-10-22T10:06:00  Session refreshed
-
 ```
 
 **Output (console & `sorted.log`):**
-```
 
+```
 [2025-10-22T10:00:00] Server1 started
 [2025-10-22T10:02:00] Server2 started
 [2025-10-22T10:05:00] Cache cleared
 [2025-10-22T10:06:00] Session refreshed
+```
 
-````
 
-
+---
 
 
 ## Code Overview
@@ -79,5 +72,3 @@ This project demonstrates reading, parsing, and merging multiple log files in C.
 * Timestamps are compared using `strcmp` — works if logs are formatted as ISO-8601 (`YYYY-MM-DDTHH:MM:SS`).
 * Fixed-size arrays are used for simplicity (`timestamp[100]`, `message[100]`). For larger files, dynamic allocation is recommended.
 * This is a **demo project** for educational purposes; not optimized for performance or error handling.
-
-
