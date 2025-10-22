@@ -1,10 +1,13 @@
+Here’s a cleaned-up and properly formatted Markdown version of your README with duplicate sections removed, consistent code blocks, and clear spacing for logs:
 
-
+```markdown
 # Log Files Merger Demo
 
 **A simple C program to merge and sort two log files by timestamp.**
 
 This project demonstrates reading, parsing, and merging multiple log files in C. It is intended as a **learning/demo project**, not production-ready code.
+
+---
 
 ## Features
 
@@ -12,61 +15,48 @@ This project demonstrates reading, parsing, and merging multiple log files in C.
 * Each log entry is expected in the format:
 
 ```
+
 <timestamp>  <message>
+
 ```
+
+> **Note:** There are **two spaces** between the timestamp and the message.
 
 * Merges and sorts all log entries **chronologically** by timestamp.
 * Prints the merged logs to the console.
-* Writes the merged logs to `sorted.log` with **two spaces** between timestamp and message.
+* Writes the merged logs to `sorted.log` preserving the **two-space separation**.
 
-Example
-
-Input:
-
-server1.log
-
-2025-10-22T10:00:00  Server1 started
-2025-10-22T10:05:00  Cache cleared
-
-
-server2.log
-
-2025-10-22T10:02:00  Server2 started
-2025-10-22T10:06:00  Session refreshed
-
-
-Output (console & sorted.log):
-
-[2025-10-22T10:00:00] Server1 started
-[2025-10-22T10:02:00] Server2 started
-[2025-10-22T10:05:00] Cache cleared
-[2025-10-22T10:06:00] Session refreshed
-
-
-The program keeps two spaces internally when writing to sorted.log, but console output shows standard formatting.
+---
 
 ## Example
 
 **Input:**
 
 `server1.log`
-2025-10-22T10:00:00 Server1 started
-2025-10-22T10:05:00 Cache cleared
+```
+
+2025-10-22T10:00:00  Server1 started
+2025-10-22T10:05:00  Cache cleared
+
+```
 
 `server2.log`
-2025-10-22T10:02:00 Server2 started
-2025-10-22T10:06:00 Session refreshed
+```
 
+2025-10-22T10:02:00  Server2 started
+2025-10-22T10:06:00  Session refreshed
+
+```
 
 **Output (console & `sorted.log`):**
+```
+
 [2025-10-22T10:00:00] Server1 started
 [2025-10-22T10:02:00] Server2 started
 [2025-10-22T10:05:00] Cache cleared
 [2025-10-22T10:06:00] Session refreshed
 
-> The program preserves **two spaces** in the file output, but console formatting uses standard spacing.
-
----
+````
 
 
 
