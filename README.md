@@ -44,10 +44,10 @@ This project demonstrates reading, parsing, and merging multiple log files in C.
 **Output (console & `sorted.log`):**
 
 ```
-[2025-10-22T10:00:00] Server1 started
-[2025-10-22T10:02:00] Server2 started
-[2025-10-22T10:05:00] Cache cleared
-[2025-10-22T10:06:00] Session refreshed
+[2025-10-22T10:00:00]  Server1 started
+[2025-10-22T10:02:00]  Server2 started
+[2025-10-22T10:05:00]  Cache cleared
+[2025-10-22T10:06:00]  Session refreshed
 ```
 
 
