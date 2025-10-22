@@ -19,33 +19,54 @@ This project demonstrates reading, parsing, and merging multiple log files in C.
 * Prints the merged logs to the console.
 * Writes the merged logs to `sorted.log` with **two spaces** between timestamp and message.
 
+Example
+
+Input:
+
+server1.log
+
+2025-10-22T10:00:00  Server1 started
+2025-10-22T10:05:00  Cache cleared
+
+
+server2.log
+
+2025-10-22T10:02:00  Server2 started
+2025-10-22T10:06:00  Session refreshed
+
+
+Output (console & sorted.log):
+
+[2025-10-22T10:00:00] Server1 started
+[2025-10-22T10:02:00] Server2 started
+[2025-10-22T10:05:00] Cache cleared
+[2025-10-22T10:06:00] Session refreshed
+
+
+The program keeps two spaces internally when writing to sorted.log, but console output shows standard formatting.
+
 ## Example
 
 **Input:**
 
 `server1.log`
-
-```
 2025-10-22T10:00:00 Server1 started
 2025-10-22T10:05:00 Cache cleared
-```
 
 `server2.log`
-
-```
 2025-10-22T10:02:00 Server2 started
 2025-10-22T10:06:00 Session refreshed
-```
 
-**Output (console & sorted.log):**
 
-```
+**Output (console & `sorted.log`):**
 [2025-10-22T10:00:00] Server1 started
 [2025-10-22T10:02:00] Server2 started
 [2025-10-22T10:05:00] Cache cleared
 [2025-10-22T10:06:00] Session refreshed
-```
 
+> The program preserves **two spaces** in the file output, but console formatting uses standard spacing.
+
+---
 
 
 
