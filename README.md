@@ -17,7 +17,7 @@ This project demonstrates reading, parsing, and merging multiple log files in C.
 
 > **Note:** There are **two spaces** between the timestamp and the message.
 
-* Merges and sorts all log entries **chronologically** by timestamp.
+* Uses a simple merge-based approach: compares timestamps from two arrays and builds a sorted array efficiently in a single pass.
 * Prints the merged logs to the console.
 * Writes the merged logs to `sorted.log` preserving the **two-space separation**.
 
